@@ -10,7 +10,7 @@ public class PrimeNo {
                 break;
             } else if (number%i!=0) {
                 System.out.println("prime");
-                System.out.println("Problegigm solved");
+                System.out.println("Problem solved");
                 break;
 
 
