@@ -17,7 +17,7 @@ public class QueueTwo {
         if (rear == capacity - 1) {
             System.out.println("Queue overflow");
         }
-        array[rear++] = element;
+        array[++rear] = element;
     }
 
     public void dequeue() {
