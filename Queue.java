@@ -30,6 +30,17 @@ public class Queue {
     public void recover(){
         front--;
     }
+    public void readjust(){
+        int i=front;
+        int j=0;
+        while(i<=rear){
+            customQueue[j]=customQueue[i];
+            i++;
+            j++;
+        }
+        front=0;
+        rear=capacity-1;
+    }
     public void display(){
         for(int i=front;i<=rear;i++){
             System.out.print(customQueue[i]+" ");
@@ -66,7 +77,7 @@ public class Queue {
         queue.enqueue(40);
         queue.enqueue(50);
         queue.enqueue(60);
-        queue.enqueue(70);
+//        queue.enqueue(70);
         queue.display();
         queue.dequeue();
         queue.display();

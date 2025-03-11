@@ -49,17 +49,22 @@ class SwitchableStructure {
 
     public static void main(String[] args) {
         SwitchableStructure structure = new SwitchableStructure(true, 10);
+//        structure.add(1);
+//        structure.add(2);
+//        structure.add(3);
+//        structure.display();
+//        structure.remove();
+//        structure.display();
+//        structure.switchMode();
+//        structure.add(4);
+//        structure.add(5);
+//        structure.display();
+//        structure.remove();
+//        structure.display();
+        structure.switchMode();
         structure.add(1);
         structure.add(2);
-        structure.add(3);
-        structure.display();
-        structure.remove();
-        structure.display();
         structure.switchMode();
-        structure.add(4);
-        structure.add(5);
-        structure.display();
-        structure.remove();
-        structure.display();
+        structure.add(3);
     }
 }
