@@ -27,7 +27,7 @@ public class LLTwo {
         node.next = head;
         head.previous = node;
         head = node;
-        head.previous=null;
+        head.previous = null;
     }
 
     public void addLast(int element) {
@@ -39,7 +39,7 @@ public class LLTwo {
         tail.next = node;
         node.previous = tail;
         tail = node;
-        tail.next=null;
+        tail.next = null;
     }
 
     public void displayForward() {
