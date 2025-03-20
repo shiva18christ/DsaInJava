@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package Collections;
 
 class Stack{
     private  int[] customStack;
@@ -12,7 +12,7 @@ class Stack{
     }
     public void push(int element){
         if(top==capacity-1){
-            System.out.println("Stack overflow");
+            System.out.println("Collections.Stack overflow");
         }else {
             top = top + 1;
             customStack[top] = element;
@@ -26,7 +26,7 @@ class Stack{
     }
     public void pop(){
         if(top==-1){
-            System.out.println("Stack underflow");
+            System.out.println("Collections.Stack underflow");
         }else {
             System.out.println("popped element " + customStack[top] + " from stack");
             top = top - 1;

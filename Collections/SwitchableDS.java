@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.Arrays;
 
 class SwitchableStructure {
@@ -15,7 +17,7 @@ class SwitchableStructure {
 
     public void switchMode() {
         isStack = !isStack;
-        System.out.println("Switched to " + (isStack ? "Stack" : "Queue") + " mode.");
+        System.out.println("Switched to " + (isStack ? "Stack" : "Collections.Queue") + " mode.");
     }
 
     public void add(int element) {

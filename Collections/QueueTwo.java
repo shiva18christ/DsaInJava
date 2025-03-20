@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.Scanner;
 
 public class QueueTwo {
@@ -15,14 +17,14 @@ public class QueueTwo {
 
     public void enqueue(int element) {
         if (rear == capacity - 1) {
-            System.out.println("Queue overflow");
+            System.out.println("Collections.Queue overflow");
         }
         array[++rear] = element;
     }
 
     public void dequeue() {
         if (rear == -1) {
-            System.out.println("Queue underflow");
+            System.out.println("Collections.Queue underflow");
         }
         System.out.println(array[front] + " has been removed from queue");
         front++;
@@ -30,14 +32,14 @@ public class QueueTwo {
 
     public void peek() {
         if (rear == -1) {
-            System.out.println("Queue is empty");
+            System.out.println("Collections.Queue is empty");
         }
         System.out.println(array[front]);
     }
 
     public void display() {
         if (rear == -1) {
-            System.out.println("Queue is empty");
+            System.out.println("Collections.Queue is empty");
         }
         System.out.println(" ");
         for (int i = front; i <= rear; i++) {
@@ -54,7 +56,7 @@ public class QueueTwo {
 
     public void readjust() {
         if (rear < front) {
-            System.out.println("Queue is empty");
+            System.out.println("Collections.Queue is empty");
         }
         int i = 0;
         for (int j = front; j <= rear; j++, i++) {
@@ -82,7 +84,7 @@ public class QueueTwo {
             int choice = input.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("Enter the element you want to store in the Queue");
+                    System.out.println("Enter the element you want to store in the Collections.Queue");
                     int element = input.nextInt();
                     queue.enqueue(element);
                     break;

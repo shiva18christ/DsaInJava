@@ -1,3 +1,5 @@
+package Collections;
+
 class SingleLL{
     Node head;
     public class Node{

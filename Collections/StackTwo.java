@@ -1,3 +1,5 @@
+package Collections;
+
 public class StackTwo {
     private int[] array;
     private int top;

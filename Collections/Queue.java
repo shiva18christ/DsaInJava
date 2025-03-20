@@ -1,3 +1,5 @@
+package Collections;
+
 public class Queue {
     private int[] customQueue;
     private int front;
@@ -12,7 +14,7 @@ public class Queue {
     }
     public void enqueue(int element) {
         if(rear==capacity-1){
-            System.out.println("Queue overflow");
+            System.out.println("Collections.Queue overflow");
         }else {
             rear = rear + 1;
             customQueue[rear] = element;
@@ -21,7 +23,7 @@ public class Queue {
     }
     public void dequeue(){
         if(rear==-1){
-            System.out.println("Queue underflow");
+            System.out.println("Collections.Queue underflow");
         }else {
             System.out.println("Removed element " + customQueue[front] + " from queue");
             front++;
@@ -49,7 +51,7 @@ public class Queue {
     }
     public void peek() {
         if (rear == -1) {
-            System.out.println("Queue is empty");
+            System.out.println("Collections.Queue is empty");
         } else {
             System.out.println(customQueue[front]);
         }
